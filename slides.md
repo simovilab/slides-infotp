@@ -11,7 +11,7 @@ mdc: true
 Tecnología y comunicación para los sistemas de información del transporte público
 
 <div class="absolute top-4 right-8">
-<img src="/images/simovi_light.png" width="150px" alt="Logo SIMOVI">
+<img src="/images/simovi_dark.png" width="150px" alt="Logo SIMOVI">
 </div>
 
 <div class="absolute bottom-4 right-8">
@@ -23,6 +23,8 @@ Diciembre 2025
 ## resumen ejecutivo
 
 La infomación del transporte público
+
+Con más de veinte proyectos de código abierto, subsistemas e interfaces bien delimitados y una selección comprobada de tecnologías robustas usadas en entornos críticos, este desarrollo funciona como un mapa tecnológico y una columna vertebral para el ecosistema digital abierto del transporte público y las ciudades inteligentes.
 
 ---
 
@@ -50,8 +52,6 @@ Consume datos **GTFS** y distribuye la información por múltiples canales, inte
 
 </div>
 </div>
-
-> Con más de veinte proyectos de código abierto, subsistemas e interfaces bien delimitados y una selección comprobada de tecnologías robustas usadas en entornos críticos, este desarrollo funciona como un mapa tecnológico y una columna vertebral para el ecosistema digital abierto del transporte público y las ciudades inteligentes.
 
 ---
 
@@ -143,7 +143,7 @@ El diseño de InfoTP gira alrededor de GTFS (_General Transit Feed Specification
 - Somos miembros académicos de MobilityData, la organización internacional que dirige su evolución.
 - Desarrollamos herramientas informáticas especializadas para su procesamiento y análisis en el transporte público costarricense.
 
-![Logo MobilityData](/images/mobilitydata_light_blue.png){width=250px}
+![Logo MobilityData](/images/mobilitydata_white.png){width=250px}
 
 ---
 
@@ -151,7 +151,7 @@ El diseño de InfoTP gira alrededor de GTFS (_General Transit Feed Specification
 
 :badge{ value="A1" color="#6DC067" }
 
-Databús®
+![Logo Databús](/images/databus_white.png){width=150px}
 
 - Recolección de datos de rastreo y telemetría de los vehículos.
 - Procesamiento de datos de alta frecuencia en tiempo real.
@@ -173,7 +173,7 @@ flowchart LR
 
 :badge{ value="A2" color="#F37021" }
 
-Infobús®
+![Logo Infobús](/images/infobus_white.png){width=150px}
 
 - Compilación de _feeds_ (suministros de datos) de **GTFS** de diferentes fuentes.
 - Distribución de la información a diferentes servicios vía múltiples canales, interfaces y protocolos.
@@ -240,30 +240,104 @@ Infobús® Admin
 
 Utilizamos una cuidadosa selección de tecnologías maduras y de código abierto.
 
-[Logos de las tecnologías del sistema]
-
-- ![Django logo](https://api.iconify.design/simple-icons:django.svg) Django
-- ![Celery logo](https://api.iconify.design/simple-icons:celery.svg) Celery
-- ![Airflow logo](https://api.iconify.design/simple-icons:apacheairflow.svg) Apache Airflow
-- ![PostgreSQL logo](https://api.iconify.design/simple-icons:postgresql.svg) PostgreSQL
-- ![TimescaleDB logo](https://api.iconify.design/simple-icons:timescale.svg) TimescaleDB
-- ![MongoDB logo](https://api.iconify.design/simple-icons:mongodb.svg) MongoDB
-- ![Redis logo](https://api.iconify.design/simple-icons:redis.svg) Redis
-- ![RabbitMQ logo](https://api.iconify.design/simple-icons:rabbitmq.svg) RabbitMQ
-- ![GraphQL logo](https://api.iconify.design/simple-icons:graphql.svg) GraphQL Strawberry
-- ![Apache logo](https://api.iconify.design/simple-icons:apache.svg) Apache Fuseki
-- ![MCP logo](https://api.iconify.design/simple-icons:modelcontextprotocol.svg) FastMCP
-- ![Strapi logo](https://api.iconify.design/simple-icons:strapi.svg) Strapi
-- ![Vue.js logo](https://api.iconify.design/simple-icons:vuedotjs.svg) Vue
-- ![Nuxt logo](https://api.iconify.design/simple-icons:nuxtdotjs.svg) Nuxt
-- ![Capacitor logo](https://api.iconify.design/simple-icons:capacitor.svg) Capacitor
-- ![Ionic logo](https://api.iconify.design/simple-icons:ionic.svg) Ionic
-- ![Grafana logo](https://api.iconify.design/simple-icons:grafana.svg) Grafana
-- ![Prometheus logo](https://api.iconify.design/simple-icons:prometheus.svg) Prometheus
-- ![Docker logo](https://api.iconify.design/simple-icons:docker.svg) Docker
-- ![OpenTelemetry logo](https://api.iconify.design/simple-icons:opentelemetry.svg) OpenTelemetry
-- ![Polars logo](https://api.iconify.design/simple-icons:polars.svg) Polars
-- ![Parquet logo](https://api.iconify.design/simple-icons:apacheparquet.svg) Apache Parquet
+<div class="grid grid-cols-6 gap-6">
+<div class="flex flex-col items-center">
+<simple-icons-django class="text-2xl"/>
+<span class="text-center mt-2">Django</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-celery class="text-2xl"/>
+<span class="text-center mt-2">Celery</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-apacheairflow class="text-2xl"/>
+<span class="text-center mt-2">Airflow</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-postgresql class="text-2xl"/>
+<span class="text-center mt-2">PostgreSQL</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-timescale class="text-2xl"/>
+<span class="text-center mt-2">TimescaleDB</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-mongodb class="text-2xl"/>
+<span class="text-center mt-2">MongoDB</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-redis class="text-2xl"/>
+<span class="text-center mt-2">Redis</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-rabbitmq class="text-2xl"/>
+<span class="text-center mt-2">RabbitMQ</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-graphql class="text-2xl"/>
+<span class="text-center mt-2">Strawberry</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-apache class="text-2xl"/>
+<span class="text-center mt-2">Fuseki</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-modelcontextprotocol class="text-2xl"/>
+<span class="text-center mt-2">FastMCP</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-strapi class="text-2xl"/>
+<span class="text-center mt-2">Strapi</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-vuedotjs class="text-2xl"/>
+<span class="text-center mt-2">Vue</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-nuxtdotjs class="text-2xl"/>
+<span class="text-center mt-2">Nuxt</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-capacitor class="text-2xl"/>
+<span class="text-center mt-2">Capacitor</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-ionic class="text-2xl"/>
+<span class="text-center mt-2">Ionic</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-grafana class="text-2xl"/>
+<span class="text-center mt-2">Grafana</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-prometheus class="text-2xl"/>
+<span class="text-center mt-2">Prometheus</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-docker class="text-2xl"/>
+<span class="text-center mt-2">Docker</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-opentelemetry class="text-2xl"/>
+<span class="text-center mt-2">OpenTelemetry</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-polars class="text-2xl"/>
+<span class="text-center mt-2">Polars</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-apacheparquet class="text-2xl"/>
+<span class="text-center mt-2">Parquet</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-polars class="text-2xl"/>
+<span class="text-center mt-2">Wazuh</span>
+</div>
+<div class="flex flex-col items-center">
+<simple-icons-apacheparquet class="text-2xl"/>
+<span class="text-center mt-2">Zabbix</span>
+</div>
+</div>
 
 Más información: https://github.com/simovilab/
 
@@ -290,57 +364,63 @@ Más información: https://github.com/simovilab/
 
 ## ventajas
 
-1. **Especialización**
-
-Propuesta basada en normas, especificaciones, estándares y recomendaciones internacionales.
-
-2. **Consistencia y unicidad**
-
-La información es **consistente** entre sí y con los datos oficiales a partir de una **fuente única**.
-
-3. **Gestión integral de la comunicación**
-
-Manejo unificado de todos los puntos de contacto de las personas usuarias con el sistema.
-
-4. **Flexibilidad de implementación**
-
-Permite la **coexistencia con otros servicios** y proveedores del mercado.
-
-5. **Implementación gradual**
-
-El diseño modular permite la adición paulatina de nuevas funcionalidades.
-
-6. **Soluciones a la medida**
-
-En coordinación con las autoridades, el sistema puede satisfacer **demandas específicas**.
+<div class="grid grid-cols-3 gap-6">
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-target-variant /> Especialización</h5>
+<p>Propuesta basada en normas, especificaciones, estándares y recomendaciones internacionales.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-sync /> Consistencia y unicidad</h5>
+<p>La información es <strong>consistente</strong> entre sí y con los datos oficiales a partir de una <strong>fuente única</strong>.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-network /> Gestión integral de la comunicación</h5>
+<p>Manejo unificado de todos los puntos de contacto con el sistema.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-puzzle /> Flexibilidad de implementación</h5>
+<p>Permite la <strong>coexistencia con otros servicios</strong> y proveedores del mercado.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-stairs /> Implementación gradual</h5>
+<p>El diseño modular permite la adición paulatina de nuevas funcionalidades.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-toolbox /> Soluciones a la medida</h5>
+<p>En coordinación con las autoridades, el sistema puede satisfacer <strong>demandas específicas</strong>.</p>
+</div>
+</div>
 
 ---
 
 ## ventajas
 
-7. **Enfoque en seguridad y robustez**
-
-El sistema tiene un diseño orientado a la **seguridad de los datos y la confiabilidad**.
-
-8. **Respaldo académico**
-
-Propuesta de la Escuela de Ingeniería Eléctrica en alianza con otras **instancias especializadas**.
-
-9. **Garantía contractual**
-
-Servicios brindados mediante un contrato con la Universidad de Costa Rica.
-
-10. **Flexibilidad de financiamiento**
-
-La arquitectura modular permite recibir financiamiento de distintas fuentes.
-
-11. **Monetización del sistema**
-
-Varias opciones de monetización del sistema que ayudan a financiar los servicios.
-
-12. **Código abierto**
-
-Uso extendido en la comunidad nacional e internacional por medio de un proyecto de código abierto.
+<div class="grid grid-cols-3 gap-6">
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-shield-lock /> Seguridad y robustez</h5>
+<p>El sistema tiene un diseño orientado a la <strong>seguridad de los datos y la confiabilidad</strong>.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-school /> Respaldo académico</h5>
+<p>Propuesta de la Escuela de Ingeniería Eléctrica en alianza con otras <strong>instancias especializadas</strong>.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-file /> Garantía contractual</h5>
+<p>Servicios brindados mediante un contrato con la Universidad de Costa Rica.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-cash-multiple /> Flexibilidad de financiamiento</h5>
+<p>La arquitectura modular permite recibir financiamiento de distintas fuentes.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-hand-coin /> Monetización del sistema</h5>
+<p>Varias opciones de monetización del sistema que ayudan a financiar los servicios.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<h5 class="font-bold mb-2"><mdi-github /> Código abierto</h5>
+<p>Uso extendido en la comunidad nacional e internacional por medio de un proyecto de código abierto.</p>
+</div>
+</div>
 
 ---
 
