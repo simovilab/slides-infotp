@@ -7,7 +7,7 @@ monaco: false
 mdc: true
 ---
 
-# infotp
+<AnimatedLogo />
 
 Tecnología y comunicación para los sistemas de información del transporte público
 
