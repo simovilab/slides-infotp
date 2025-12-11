@@ -15,7 +15,7 @@ Tecnología y comunicación para los sistemas de información del transporte pú
 <img src="/images/simovi_dark.png" width="125px" alt="Logo SIMOVI">
 </div>
 
-<div class="absolute bottom-4 right-8 font-bold text-sm uppercase">
+<div class="absolute bottom-4 right-8 font-bold text-sm">
 Diciembre 2025
 </div>
 
@@ -174,6 +174,41 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 <material-symbols-send class="text-4xl mb-3" />
 <p>Distribución de la información vía múltiples canales, interfaces y protocolos.</p>
 </div>
+</div>
+</div>
+
+---
+
+# ecosistema tecnológico
+
+::definition
+**InfoTP** está orientado hacia la **interoperabilidad** y la **independencia tecnológica**, fomentando un ecosistema de innovación con una variedad de opciones para todas las partes interesadas.
+::
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold mb-3">Databús</h4>
+<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos compatibles directamente con GTFS.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold">Aplicaciones de planificación de viajes multimodales</dt>
+<dd class="ml-4 text-xs">Google Maps, Transit, etc.</dd>
+<dt class="font-semibold">Servicios de gestión y optimización operativa</dt>
+<dd class="ml-4 text-xs">Optibus, UbiRider, Moovit MaaS, etc.</dd>
+<dt class="font-semibold">Editores de GTFS</dt>
+<dd class="ml-4 text-xs">Ualabee, AddTransit, etc.</dd>
+</dl>
+</div>
+<div>
+<h4 class="font-bold mb-3">Infobús</h4>
+<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos gracias a una multitud de interfaces para aplicaciones independientes.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold">Páginas web externas</dt>
+<dd class="ml-4 text-xs">Conexión con datos estáticos y en tiempo real</dd>
+<dt class="font-semibold">Publicidad exterior</dt>
+<dd class="ml-4 text-xs">JCDecaux, Colorvisión, Publiex, etc.</dd>
+<dt class="font-semibold">Aficionados a la tecnología</dt>
+<dd class="ml-4 text-xs">Desarrollos independientes y experimentales</dd>
+</dl>
 </div>
 </div>
 

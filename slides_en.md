@@ -15,7 +15,7 @@ Technology and communication for public transportation information systems
 <img src="/images/simovi_dark.png" width="125px" alt="Logo SIMOVI">
 </div>
 
-<div class="absolute bottom-4 right-8 font-bold text-sm uppercase">
+<div class="absolute bottom-4 right-8 font-bold text-sm">
 December 2025
 </div>
 
@@ -25,7 +25,7 @@ December 2025
 
 <div class="flex items-center justify-start h-full">
 <div class="text-left">
-<p>In Costa Rica, the lack of public transportation information is evident, and it is an important factor that affects the choice of service as a mobility alternative and the perception of user satisfaction.</p>
+<p>In Costa Rica, the lack of public transportation information is evident, and it is an important factor that affects the choice of this service as a mobility alternative and the perception of the users' satisfaction.</p>
 
 <p><strong>InfoTP</strong> is the result of research in technologies and standards applied to public transportation, systems engineering design, and service design, presented as a practical guide to design and implementation for decision makers.</p>
 
@@ -172,6 +172,41 @@ Databus® and Infobus® are registered trademarks of the University of Costa Ric
 <material-symbols-send class="text-4xl mb-3" />
 <p>Distribution of information through multiple channels, interfaces, and protocols.</p>
 </div>
+</div>
+</div>
+
+---
+
+# technology ecosystem
+
+::definition
+**InfoTP** is oriented towards **interoperability** and **technological independence**, fostering an innovation ecosystem with a variety of options for all stakeholders.
+::
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold mb-3">Databús</h4>
+<p class="mb-3 text-sm">Enables participation of technology providers compatible directly with GTFS.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold">Multimodal trip planning applications</dt>
+<dd class="ml-4 text-xs">Google Maps, Transit, etc.</dd>
+<dt class="font-semibold">Operational management and optimization services</dt>
+<dd class="ml-4 text-xs">Optibus, UbiRider, Moovit MaaS, etc.</dd>
+<dt class="font-semibold">GTFS editors</dt>
+<dd class="ml-4 text-xs">Ualabee, AddTransit, etc.</dd>
+</dl>
+</div>
+<div>
+<h4 class="font-bold mb-3">Infobús</h4>
+<p class="mb-3 text-sm">Enables participation of technology providers through a multitude of interfaces for independent applications.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold">External web pages</dt>
+<dd class="ml-4 text-xs">Connection with static and real-time data</dd>
+<dt class="font-semibold">Outdoor advertising</dt>
+<dd class="ml-4 text-xs">JCDecaux, Colorvisión, Publiex, etc.</dd>
+<dt class="font-semibold">Technology enthusiasts</dt>
+<dd class="ml-4 text-xs">Independent and experimental developments</dd>
+</dl>
 </div>
 </div>
 
