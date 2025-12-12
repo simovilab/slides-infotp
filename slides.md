@@ -1,5 +1,7 @@
 ---
-theme: default
+theme: ./theme
+fonts:
+  sans: 'Inter'
 transition: view-transition
 title: "InfoTP | Tecnología y comunicación para el transporte público"
 class: cover
@@ -48,18 +50,18 @@ Construimos nuestra propuesta con base en las recomendaciones de las organizacio
 Este **diseño conjunto** permite ofrecer información siempre **consistente**, **precisa**, **actualizada** y desde una **fuente única**, a través de la mayor cantidad posible de canales de comunicación.
 
 <div class="grid grid-cols-4 gap-4">
-<div class="flex flex-col items-center text-center p-3 border border-white rounded-lg">
-<p class="font-bold">Datos abiertos y estandarizados</p>
-</div>
-<div class="flex flex-col items-center text-center p-3 border border-white rounded-lg">
-<p class="font-bold">Arquitectura única para el sistema</p>
-</div>
-<div class="flex flex-col items-center text-center p-3 border border-white rounded-lg">
-<p class="font-bold">Interoperabilidad</p>
-</div>
-<div class="flex flex-col items-center text-center p-3 border border-white rounded-lg">
-<p class="font-bold">Independencia tecnológica</p>
-</div>
+    <div class="flex flex-col items-center justify-center text-center p-3 border border-white rounded-lg h-24">
+        <p class="font-bold">Datos abiertos y estandarizados</p>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center p-3 border border-white rounded-lg h-24">
+        <p class="font-bold">Arquitectura única para el sistema</p>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center p-3 border border-white rounded-lg h-24">
+        <p class="font-bold">Interoperabilidad</p>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center p-3 border border-white rounded-lg h-24">
+        <p class="font-bold">Independencia tecnológica</p>
+    </div>
 </div>
 
 ---
@@ -135,22 +137,21 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 
 
 <div class="flex flex-col items-center justify-center h-full gap-8">
-<div></div>
-<img src="/images/databus_white.png" width="300px" alt="Logo Databús">
-<div class="grid grid-cols-3 gap-6 w-full">
-<div class="flex flex-col items-center text-center">
-<material-symbols-location-on class="text-4xl mb-3" />
-<p>Recolección de datos de rastreo y telemetría de los vehículos e información oficial de agencias.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-bolt class="text-4xl mb-3" />
-<p>Procesamiento y análisis de datos de alta frecuencia en tiempo real.</p>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-feed class="text-4xl mb-3" />
-<p>Publicación de <em>feeds</em> (suministros de datos) de <strong>GTFS</strong> <em>Schedule</em> y <strong>GTFS</strong> <em>Realtime</em>.</p>
-</div>
-</div>
+    <img src="/images/databus_white.png" width="300px" alt="Logo Databús">
+    <div class="grid grid-cols-3 gap-6 w-full">
+        <div class="flex flex-col items-center text-center">
+            <material-symbols-location-on class="text-4xl mb-3" />
+            <p>Recolección de datos de rastreo y telemetría de los vehículos e información oficial de agencias.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <material-symbols-bolt class="text-4xl mb-3" />
+            <p>Procesamiento y análisis de datos de alta frecuencia en tiempo real.</p>
+            </div>
+        <div class="flex flex-col items-center text-center">
+            <material-symbols-feed class="text-4xl mb-3" />
+            <p>Publicación de <em>feeds</em> (suministros de datos) de <strong>GTFS</strong> <em>Schedule</em> y <strong>GTFS</strong> <em>Realtime</em>.</p>
+        </div>
+    </div>
 </div>
 
 ---
@@ -312,102 +313,102 @@ Utilizamos una cuidadosa selección de tecnologías robustas de código abierto.
 ::
 
 <div class="grid grid-cols-6 gap-6">
-<div class="flex flex-col items-center">
-<simple-icons-django class="text-2xl"/>
-<span class="text-center mt-2">Django</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-postgresql class="text-2xl"/>
-<span class="text-center mt-2">PostgreSQL</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-redis class="text-2xl"/>
-<span class="text-center mt-2">Redis</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-apacheairflow class="text-2xl"/>
-<span class="text-center mt-2">Airflow</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-rabbitmq class="text-2xl"/>
-<span class="text-center mt-2">RabbitMQ</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-timescale class="text-2xl"/>
-<span class="text-center mt-2">TimescaleDB</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-mongodb class="text-2xl"/>
-<span class="text-center mt-2">MongoDB</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-graphql class="text-2xl"/>
-<span class="text-center mt-2">Strawberry</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-celery class="text-2xl"/>
-<span class="text-center mt-2">Celery</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-apache class="text-2xl"/>
-<span class="text-center mt-2">Fuseki</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-modelcontextprotocol class="text-2xl"/>
-<span class="text-center mt-2">FastMCP</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-strapi class="text-2xl"/>
-<span class="text-center mt-2">Strapi</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-vuedotjs class="text-2xl"/>
-<span class="text-center mt-2">Vue</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-nuxtdotjs class="text-2xl"/>
-<span class="text-center mt-2">Nuxt</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-capacitor class="text-2xl"/>
-<span class="text-center mt-2">Capacitor</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-ionic class="text-2xl"/>
-<span class="text-center mt-2">Ionic</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-grafana class="text-2xl"/>
-<span class="text-center mt-2">Grafana</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-prometheus class="text-2xl"/>
-<span class="text-center mt-2">Prometheus</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-docker class="text-2xl"/>
-<span class="text-center mt-2">Docker</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-opentelemetry class="text-2xl"/>
-<span class="text-center mt-2">OpenTelemetry</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-polars class="text-2xl"/>
-<span class="text-center mt-2">Polars</span>
-</div>
-<div class="flex flex-col items-center">
-<simple-icons-apacheparquet class="text-2xl"/>
-<span class="text-center mt-2">Parquet</span>
-</div>
-<div class="flex flex-col items-center">
-<mdi-lock class="text-2xl"/>
-<span class="text-center mt-2">Wazuh</span>
-</div>
-<div class="flex flex-col items-center">
-<mdi-magnify-scan class="text-2xl"/>
-<span class="text-center mt-2">Zabbix</span>
-</div>
+    <div class="flex flex-col items-center">
+    <simple-icons-django class="text-2xl"/>
+    <span class="text-center mt-2">Django</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-postgresql class="text-2xl"/>
+    <span class="text-center mt-2">PostgreSQL</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-redis class="text-2xl"/>
+    <span class="text-center mt-2">Redis</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-apacheairflow class="text-2xl"/>
+    <span class="text-center mt-2">Airflow</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-rabbitmq class="text-2xl"/>
+    <span class="text-center mt-2">RabbitMQ</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-timescale class="text-2xl"/>
+    <span class="text-center mt-2">TimescaleDB</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-mongodb class="text-2xl"/>
+    <span class="text-center mt-2">MongoDB</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-graphql class="text-2xl"/>
+    <span class="text-center mt-2">Strawberry</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-celery class="text-2xl"/>
+    <span class="text-center mt-2">Celery</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-apache class="text-2xl"/>
+    <span class="text-center mt-2">Fuseki</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-modelcontextprotocol class="text-2xl"/>
+    <span class="text-center mt-2">FastMCP</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-strapi class="text-2xl"/>
+    <span class="text-center mt-2">Strapi</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-vuedotjs class="text-2xl"/>
+    <span class="text-center mt-2">Vue</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-nuxtdotjs class="text-2xl"/>
+    <span class="text-center mt-2">Nuxt</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-capacitor class="text-2xl"/>
+    <span class="text-center mt-2">Capacitor</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-ionic class="text-2xl"/>
+    <span class="text-center mt-2">Ionic</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-grafana class="text-2xl"/>
+    <span class="text-center mt-2">Grafana</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-prometheus class="text-2xl"/>
+    <span class="text-center mt-2">Prometheus</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-docker class="text-2xl"/>
+    <span class="text-center mt-2">Docker</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-opentelemetry class="text-2xl"/>
+    <span class="text-center mt-2">OpenTelemetry</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-polars class="text-2xl"/>
+    <span class="text-center mt-2">Polars</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <simple-icons-apacheparquet class="text-2xl"/>
+    <span class="text-center mt-2">Parquet</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <mdi-lock class="text-2xl"/>
+    <span class="text-center mt-2">Wazuh</span>
+    </div>
+    <div class="flex flex-col items-center">
+    <mdi-magnify-scan class="text-2xl"/>
+    <span class="text-center mt-2">Zabbix</span>
+    </div>
 </div>
 
 ---
