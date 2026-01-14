@@ -326,8 +326,8 @@ Utilizamos una cuidadosa selección de tecnologías robustas de código abierto.
     <span class="text-center mt-2">Redis</span>
     </div>
     <div class="flex flex-col items-center">
-    <simple-icons-apacheairflow class="text-2xl"/>
-    <span class="text-center mt-2">Airflow</span>
+    <simple-icons-prefect class="text-2xl"/>
+    <span class="text-center mt-2">Prefect</span>
     </div>
     <div class="flex flex-col items-center">
     <simple-icons-rabbitmq class="text-2xl"/>
