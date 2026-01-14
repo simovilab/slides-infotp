@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@300&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700');
 
+:root {
+  /* UCR brand colors */
+  --sky-ucr: #00C0F3;        /* Celeste - Pantone 298 C */
+  --blue-ucr: #005DA4;       /* Azul - Pantone 2945 C */
+  --green-ucr: #6DC067;      /* Verde - Pantone 7489 C */
+  --yellow-ucr: #FFE06A;     /* Amarillo - Pantone 121 C */
+  --yellow-2-ucr: #FFDD00;   /* Amarillo 2 - Pantone 108 C */
+  --yellow-3-ucr: #FFDD00;   /* Amarillo 3 - Pantone 108 C */
+  --orange-1-ucr: #e5b365;   /* Naranja 1 - Pantone 142 C */
+  --orange-3-ucr: #F37021;   /* Naranja 3 - Pantone 151 C */
+  --green-4-ucr: #008641;    /* Verde 4 - Pantone 348 C */
+  --yellow-4-ucr: #FDB912;   /* Amarillo 4 - Pantone 7409 C */
+  --brown-2-ucr: #7B3400;    /* Café 2 - Pantone 725 C */
+}
+
 h1,
 h2 {
   font-family: 'Bitcount', sans-serif;
