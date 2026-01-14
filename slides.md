@@ -1,7 +1,6 @@
 ---
 theme: ./theme
-fonts:
-  sans: 'Inter'
+
 transition: view-transition
 title: "InfoTP | Tecnología y comunicación para el transporte público"
 class: cover
@@ -9,29 +8,126 @@ monaco: false
 mdc: true
 ---
 
-<AnimatedLogo />
-
+<span class="text-4xl font-bold">
 Tecnología y comunicación para los sistemas de información del transporte público
+</span>
 
-<div class="absolute top-4 right-8">
+<div class="absolute top-8 right-8">
 <img src="/images/simovi_dark.png" width="125px" alt="Logo SIMOVI">
 </div>
 
-<div class="absolute bottom-4 right-8 font-bold text-sm">
-Diciembre 2025
+<div class="absolute bottom-8 right-8 text-sm">
+Enero 2026
 </div>
 
 ---
+layout: section
+---
 
-## resumen ejecutivo
+# quiénes somos
 
-<div class="flex items-center justify-start h-full">
-<div class="text-left">
-<p>En Costa Rica, la carencia de información del transporte público es grave y evidente, y es un factor importante que afecta la elección del servicio como alternativa de movilidad y la percepción de satisfacción de las personas usuarias.</p>
+---
 
-<p><strong>InfoTP</strong> es el resultado de la investigación en tecnologías y estándares aplicados al transporte público, el diseño de sistemas de ingeniería y el diseño de servicios, presentado como una guía práctica de diseño e implementación para tomadores de decisiones.</p>
+## nosotros
 
-<p>Con más de veinte proyectos de código abierto, un diseño con subsistemas e interfaces bien delimitados y una selección comprobada de tecnologías robustas usadas en entornos críticos, este desarrollo funciona como un mapa tecnológico y una columna vertebral para un ecosistema digital abierto del transporte público y las ciudades inteligentes, con el respaldo académico e institucional de la Universidad de Costa Rica.</p>
+::definition
+El Laboratorio de Sistemas Inteligentes de Movilidad (SIMOVI) de la Escuela de Ingeniería Eléctrica (EIE) de la Universidad de Costa Rica (UCR) realiza investigación y desarrollo en sistemas inteligentes de transporte público.
+::
+
+<div class="grid grid-cols-2 gap-3 text-small">
+<div>
+<p><strong>Fabián Abarca Calderón, M.Sc.</strong><br>
+<em>Coordinador y desarrollador principal</em></p>
+</div>
+<div>
+<p><strong>Marvin Coto Jiménez, Ph.D.</strong><br>
+<em>Análisis de datos e inteligencia artificial</em></p>
+</div>
+<div>
+<p><strong>Gustavo Núñez Segura, Ph.D.</strong><br>
+<em>Redes de telecomunicaciones</em></p>
+</div>
+<div>
+<p><strong>Jonathan Agüero Valverde, Ph.D.</strong><br>
+<em>Transporte y estadística espacial</em></p>
+</div>
+<div>
+<p><strong>Silvia Mata Marín, Ph.D.</strong><br>
+<em>Diseño de servicios y diseño gráfico</em></p>
+</div>
+<div>
+<p><strong>Fabiana Gama de Medeiros, Ph.D.</strong><br>
+<em>Estudios de comportamiento y percepción</em></p>
+</div>
+</div>
+
+---
+layout: section
+---
+
+# plan piloto ucr
+
+---
+
+<div class="flex items-center justify-center">
+<img src="/images/b_white.png" width="125px" alt="Logo bUCR">
+</div>
+
+SIMOVI desarrollará el plan piloto de un sistema de información del transporte público para el servicio de bus interno del campus central de la Universidad de Costa Rica.
+
+<div class="grid grid-cols-3 gap-6">
+<div class="border border-white rounded-lg p-4">
+<p>Primer sistema inteligente de transporte público del país.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Permitirá evaluación de la arquitectura tecnológica.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Permitirá evaluación de la estrategia de comunicación.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Implementación en un ambiente de aplicación real.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Desarrollo propio en la infraestructura de la UCR.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Lanzamiento previsto para agosto de 2026.</p>
+</div>
+</div>
+
+---
+layout: section
+---
+
+# infotp
+
+---
+
+## resumen
+
+::definition
+**InfoTP** es el resultado de la investigación en tecnologías y estándares aplicados al transporte público inteligente, el diseño de sistemas de ingeniería y el diseño de servicios, presentado como una guía práctica de diseño e implementación.
+::
+
+<div class="grid grid-cols-3 gap-6">
+<div class="border border-white rounded-lg p-4">
+<p>Más de veinte proyectos de código abierto.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Diseño con subsistemas e interfaces bien delimitados.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Tecnologías robustas usadas en entornos críticos.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Base para un ecosistema digital abierto.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Compatible con las ciudades inteligentes.</p>
+</div>
+<div class="border border-white rounded-lg p-4">
+<p>Respaldo académico e institucional de la UCR.</p>
 </div>
 </div>
 
@@ -47,7 +143,7 @@ Informe completo disponible en marzo 2026.
 Construimos nuestra propuesta con base en las recomendaciones de las organizaciones internacionales líderes en sistemas inteligentes de transporte público y sistemas de software. **InfoTP** es una arquitectura tecnológica y una estrategia de comunicación basadas en un principio esencial: **unicidad de la información**.
 ::
 
-Este **diseño conjunto** permite ofrecer información siempre **consistente**, **precisa**, **actualizada** y desde una **fuente única**, a través de la mayor cantidad posible de canales de comunicación.
+Este **diseño conjunto** de tecnología y comunicación permite ofrecer información **consistente**, **precisa**, **actualizada** y desde una **fuente única**, a través de la mayor cantidad posible de canales de comunicación.
 
 <div class="grid grid-cols-4 gap-4">
     <div class="flex flex-col items-center justify-center text-center p-3 border border-white rounded-lg h-24">
@@ -64,12 +160,19 @@ Este **diseño conjunto** permite ofrecer información siempre **consistente**, 
     </div>
 </div>
 
+
+---
+layout: section
+---
+
+# tecnología
+
 ---
 
 ## gtfs
 
 ::definition
-Somos los especialistas de **GTFS** (_General Transit Feed Specification_) en Costa Rica. Todo el diseño de **InfoTP** gira alrededor de esta especificación y otros estándares complementarios.
+Somos los especialistas de **GTFS** en Costa Rica. Todo el diseño de **InfoTP** gira alrededor de esta especificación y otros estándares complementarios.
 ::
 
 <div class="grid grid-cols-3 gap-6">
@@ -93,19 +196,12 @@ Somos los especialistas de **GTFS** (_General Transit Feed Specification_) en Co
 </div>
 </div>
 
-
----
-layout: section
----
-
-# tecnología
-
 ---
 
 ## arquitectura
 
 ::definition
-La **arquitectura tecnológica** de **InfoTP** es una solución de extremo a extremo para los sistemas de información del transporte público. Su arquitectura tiene dos subsistemas principales.
+La **arquitectura tecnológica** de **InfoTP** es una **solución de extremo a extremo** para los sistemas de información del transporte público. Su arquitectura tiene dos subsistemas principales.
 ::
 
 <div class="grid grid-cols-2 gap-8">
@@ -113,7 +209,7 @@ La **arquitectura tecnológica** de **InfoTP** es una solución de extremo a ext
 
 ### Databús
 
-Subsistema :badge{ value="A1" color="#6DC067" }
+*Subsistema* :badge{ value="A1" color="#6DC067" }
 
 Recopila la información oficial y los datos de rastreo y telemetría de los vehículos para la publicación en tiempo real con la especificación **GTFS**, disponible para todas las aplicaciones compatibles, incluyendo Google Maps, Moovit, Transit y otros proveedores.
 
@@ -122,7 +218,7 @@ Recopila la información oficial y los datos de rastreo y telemetría de los veh
 
 ### Infobús
 
-Subsistema :badge{ value="A2" color="#F37021" }
+*Subsistema* :badge{ value="A2" color="#F37021" }
 
 Consume datos **GTFS** y distribuye la información por múltiples canales, interfaces y protocolos para todas las partes del sistema, incluyendo las personas usuarias, operadores, planificadores, reguladores, investigadores y otros proveedores tecnológicos.
 
@@ -132,6 +228,30 @@ Consume datos **GTFS** y distribuye la información por múltiples canales, inte
 <div class="absolute bottom-4 right-8 text-xs">
 Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 </div>
+
+---
+
+## diagrama básico
+
+```mermaid
+flowchart TD
+    TR[Telemetría y rastreo]
+    IO[Información oficial]
+    DB((Databús))
+    IB((Infobús))
+    UI([Interfaces de usuario])
+    OP([Operadores y planificadores])
+    EX([Aplicaciones externas])
+    OA[Otras aplicaciones]
+
+    TR --> DB
+    IO --> DB
+    DB --GTFS--> IB
+    IB --> UI
+    IB --> OP
+    IB --> EX
+    DB --GTFS--> OA
+```
 
 ---
 
@@ -180,7 +300,7 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 
 ---
 
-# ecosistema tecnológico
+## ecosistema tecnológico
 
 ::definition
 **InfoTP** está orientado hacia la **interoperabilidad** y la **independencia tecnológica**, fomentando un ecosistema de innovación con una variedad de opciones para todas las partes interesadas.
@@ -191,11 +311,11 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 <h4 class="font-bold mb-3">Databús</h4>
 <p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos compatibles directamente con GTFS.</p>
 <dl class="text-sm space-y-3">
-<dt class="font-semibold">Aplicaciones de planificación de viajes multimodales</dt>
+<dt class="font-semibold"><material-symbols-open-in-phone-rounded/> Aplicaciones de planificación de viajes multimodales</dt>
 <dd class="ml-4 text-xs">Google Maps, Transit, etc.</dd>
-<dt class="font-semibold">Servicios de gestión y optimización operativa</dt>
+<dt class="font-semibold"><material-symbols-settings/> Servicios de gestión y optimización operativa</dt>
 <dd class="ml-4 text-xs">Optibus, UbiRider, Moovit MaaS, etc.</dd>
-<dt class="font-semibold">Editores de GTFS</dt>
+<dt class="font-semibold"><material-symbols-edit/> Editores de GTFS</dt>
 <dd class="ml-4 text-xs">Ualabee, AddTransit, etc.</dd>
 </dl>
 </div>
@@ -203,11 +323,11 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 <h4 class="font-bold mb-3">Infobús</h4>
 <p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos gracias a una multitud de interfaces para aplicaciones independientes.</p>
 <dl class="text-sm space-y-3">
-<dt class="font-semibold">Páginas web externas</dt>
+<dt class="font-semibold"><material-symbols-web/> Páginas web externas</dt>
 <dd class="ml-4 text-xs">Conexión con datos estáticos y en tiempo real</dd>
-<dt class="font-semibold">Publicidad exterior</dt>
+<dt class="font-semibold"><material-symbols-signpost/> Publicidad exterior</dt>
 <dd class="ml-4 text-xs">JCDecaux, Colorvisión, Publiex, etc.</dd>
-<dt class="font-semibold">Aficionados a la tecnología</dt>
+<dt class="font-semibold"><material-symbols-person-play/> Aficionados a la tecnología</dt>
 <dd class="ml-4 text-xs">Desarrollos independientes y experimentales</dd>
 </dl>
 </div>
@@ -218,7 +338,7 @@ Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 ## arquitectura complementaria
 
 ::definition
-La **arquitectura tecnológica** de **InfoTP** incluye dos subsistemas complementarios para simplificar y robustecer su operación.
+La **arquitectura tecnológica** de **InfoTP** incluye dos subsistemas complementarios para facilitar y robustecer su operación.
 ::
 
 <div class="grid grid-cols-2 gap-8">
@@ -226,18 +346,18 @@ La **arquitectura tecnológica** de **InfoTP** incluye dos subsistemas complemen
 
 ### Infobús Admin
 
-Subsistema :badge{ value="A3" color="#FFDD00" }
+*Subsistema* :badge{ value="A3" color="#FFDD00" }
 
-Ofrece una interfaz con el sector administrativo para gestionar todos los datos relacionados con el sistema de información.
+Ofrece una interfaz con el **sector administrativo** para gestionar todos los datos relacionados con el sistema de información.
 
 </div>
 <div>
 
 ### Databús Admin
 
-Subsistema :badge{ value="A4" color="#7B3400" }
+*Subsistema* :badge{ value="A4" color="#7B3400" }
 
-Ofrece herramientas para el personal de tecnologías de información para monitorear la calidad y la seguridad de la infraestructura digital.
+Ofrece herramientas para el personal de **tecnologías de información** para monitorear la calidad y la seguridad de la infraestructura digital.
 
 </div>
 </div>
@@ -312,7 +432,7 @@ Ofrece herramientas para el personal de tecnologías de información para monito
 Utilizamos una cuidadosa selección de tecnologías robustas de código abierto.
 ::
 
-<div class="grid grid-cols-6 gap-6">
+<div class="grid grid-cols-6 gap-6 text-sm">
     <div class="flex flex-col items-center">
     <simple-icons-django class="text-2xl"/>
     <span class="text-center mt-2">Django</span>
@@ -426,7 +546,7 @@ La **estrategia de comunicación** de **InfoTP** es una visión integral que pro
 
 ::
 
-<div class="grid grid-cols-5 gap-6 text-center">
+<div class="grid grid-cols-3 gap-6 text-center">
 <div class="flex flex-col items-center gap-2">
 <material-symbols-devices class="text-4xl" />
 <span>Medios digitales</span>
@@ -444,6 +564,10 @@ La **estrategia de comunicación** de **InfoTP** es una visión integral que pro
 <span>Redes sociales</span>
 </div>
 <div class="flex flex-col items-center gap-2">
+<material-symbols-circle-notifications class="text-4xl" />
+<span>Notificaciones</span>
+</div>
+<div class="flex flex-col items-center gap-2">
 <material-symbols-support-agent class="text-4xl" />
 <span>Atención al cliente</span>
 </div>
@@ -457,31 +581,31 @@ La **estrategia de comunicación** de **InfoTP** es una visión integral que pro
 
 <div class="grid grid-cols-3 gap-6">
 <div>
-<h5 class="font-bold mb-2">Nativo digital</h5>
+<h5 class="font-bold mb-2"><material-symbols-devices/> Nativo digital</h5>
 <p>Todos los canales digitales son parte de la oferta de información.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo móvil</h5>
-<p>El diseño está orientado a las consultas desde dispositivos personales.</p>
+<h5 class="font-bold mb-2"><material-symbols-mobile-rotate-sharp/> Nativo móvil</h5>
+<p>Diseño orientado a los dispositivos personales.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo inclusivo</h5>
-<p>La información oportuna y con diseño universal facilita el uso de todas las personas.</p>
+<h5 class="font-bold mb-2"><material-symbols-accessibility-new/> Nativo inclusivo</h5>
+<p>Información oportuna y con diseño universal.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo inteligente</h5>
-<p>Las nuevas interfaces habilitan el uso de lenguaje natural para hacer consultas.</p>
+<h5 class="font-bold mb-2"><material-symbols-lightbulb/> Nativo inteligente</h5>
+<p>Nuevas interfaces de lenguaje natural para hacer consultas.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo social</h5>
-<p>Las redes sociales informan y crean comunidad alrededor del transporte público.</p>
+<h5 class="font-bold mb-2"><material-symbols-share/> Nativo social</h5>
+<p>Información y comunidad alrededor del transporte público.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo multilingüe</h5>
-<p>El sistema elimina las barreras de lenguaje para los visitantes de cualquier parte del mundo.</p>
+<h5 class="font-bold mb-2"><material-symbols-emoji-language/> Nativo multilingüe</h5>
+<p>Sin barreras de lenguaje para personas de todo el mundo.</p>
 </div>
 <div>
-<h5 class="font-bold mb-2">Nativo tico</h5>
+<h5 class="font-bold mb-2"><material-symbols-flag/> Nativo tico</h5>
 <p>Es parte de nuestros pueblos y ciudades, por eso el transporte público debe ser un orgullo tico.</p>
 </div>
 </div>
@@ -491,7 +615,7 @@ La **estrategia de comunicación** de **InfoTP** es una visión integral que pro
 ## puntos de contacto
 
 ::definition
-En el diseño de servicios, los "puntos de contacto" son los lugares donde las personas usuarias interactúan con el sistema. **InfoTP** busca crear o habilitar todas las opciones posibles, desarrolladas localmente u ofrecidas por terceros, aprovechando la infraestructura de **InfoTP**.
+En el diseño de servicios, los "puntos de contacto" son los lugares donde las personas usuarias interactúan con el sistema. **InfoTP** busca crear o habilitar todas las opciones posibles, desarrolladas localmente u ofrecidas por terceros, aprovechando la infraestructura de **Databús** e **Infobús**.
 ::
 
 <div class="grid grid-cols-3 gap-6">
@@ -522,10 +646,78 @@ En el diseño de servicios, los "puntos de contacto" son los lugares donde las p
 </div>
 
 ---
+
+## catálogos
+
+::definition
+La investigación de **InfoTP** resultó en 17 catálogos divididos en 6 dominios que hacen un recuento exhaustivo de los componentes relevantes del sistema de información del transporte público.
+::
+
+<div class="grid grid-cols-6 gap-6">
+<div class="flex flex-col items-center text-center">
+<material-symbols-foundation class="text-4xl mb-2" />
+<p class="font-bold mb-2">Fundamentos</p>
+<ul class="text-sm text-left">
+<li>Principios</li>
+<li>Aplicaciones</li>
+<li>Requisitos</li>
+</ul>
+</div>
+<div class="flex flex-col items-center text-center">
+<material-symbols-domain class="text-4xl mb-2" />
+<p class="font-bold mb-2">Institucional</p>
+<ul class="text-sm text-left">
+<li>Partes</li>
+<li>Actores</li>
+<li>Organizaciones</li>
+</ul>
+</div>
+<div class="flex flex-col items-center text-center">
+<material-symbols-database class="text-4xl mb-2" />
+<p class="font-bold mb-2">Datos</p>
+<ul class="text-sm text-left">
+<li>Entidades</li>
+<li>Componentes</li>
+</ul>
+</div>
+<div class="flex flex-col items-center text-center">
+<material-symbols-settings class="text-4xl mb-2" />
+<p class="font-bold mb-2">Tecnología</p>
+<ul class="text-sm text-left">
+<li>Tecnologías</li>
+<li>Estándares</li>
+<li>Interfaces</li>
+</ul>
+</div>
+<div class="flex flex-col items-center text-center">
+<material-symbols-campaign class="text-4xl mb-2" />
+<p class="font-bold mb-2">Comunicación</p>
+<ul class="text-sm text-left">
+<li>Marcas</li>
+<li>Gráficos</li>
+<li>Señalización</li>
+<li>Interfaces</li>
+</ul>
+</div>
+<div class="flex flex-col items-center text-center">
+<material-symbols-directions-bus class="text-4xl mb-2" />
+<p class="font-bold mb-2">Servicio</p>
+<ul class="text-sm text-left">
+<li>Espacios</li>
+<li>Tiempos</li>
+</ul>
+</div>
+</div>
+
+<div class="absolute bottom-4 right-8 text-xs">
+Catálogos disponibles en marzo 2026.
+</div>
+
+---
 layout: section
 ---
 
-# propuesta
+# trabajo conjunto
 
 ---
 
@@ -552,7 +744,7 @@ layout: section
 </div>
 <div class="border border-white rounded-lg p-4">
 <h5 class="font-bold mb-2"><mdi-stairs /> Implementación gradual</h5>
-<p>El diseño modular permite la adición paulatina de nuevas funcionalidades.</p>
+<p>El <strong>diseño modular</strong> permite la adición paulatina de nuevas funcionalidades.</p>
 </div>
 <div class="border border-white rounded-lg p-4">
 <h5 class="font-bold mb-2"><mdi-toolbox /> Soluciones a la medida</h5>
@@ -581,11 +773,11 @@ layout: section
 </div>
 <div class="border border-white rounded-lg p-4">
 <h5 class="font-bold mb-2"><mdi-cash-multiple /> Flexibilidad de financiamiento</h5>
-<p>La arquitectura modular permite el financiamiento de distintas fuentes.</p>
+<p>La arquitectura modular permite el financiamiento de <strong>distintas fuentes</strong>.</p>
 </div>
 <div class="border border-white rounded-lg p-4">
 <h5 class="font-bold mb-2"><mdi-hand-coin /> Monetización del sistema</h5>
-<p>Varias opciones de monetización del sistema que ayudan a financiar los servicios.</p>
+<p>Varias opciones de <strong>monetización del sistema</strong> que ayudan a financiar los servicios.</p>
 </div>
 <div class="border border-white rounded-lg p-4">
 <h5 class="font-bold mb-2"><mdi-github /> Código abierto</h5>
@@ -595,121 +787,9 @@ layout: section
 
 ---
 
-## catálogos
-
-::definition
-La investigación de **InfoTP** resultó en 17 catálogos divididos en 5 dominios que hacen un recuento exhaustivo de los componentes relevantes del sistema de información del transporte público. Esto sigue la metodología de desarrollo de arquitecturas (ADM) de TOGAF.
-::
-
-<div class="grid grid-cols-5 gap-6">
-<div class="flex flex-col items-center text-center">
-<material-symbols-foundation class="text-4xl mb-2" />
-<p class="font-bold mb-2">Fundamentos</p>
-<ul class="text-sm text-left">
-<li>Principios</li>
-<li>Aplicaciones</li>
-<li>Requisitos</li>
-</ul>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-domain class="text-4xl mb-2" />
-<p class="font-bold mb-2">Institucional</p>
-<ul class="text-sm text-left">
-<li>Partes interesadas</li>
-<li>Actores</li>
-<li>Organizaciones</li>
-</ul>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-database class="text-4xl mb-2" />
-<p class="font-bold mb-2">Datos</p>
-<ul class="text-sm text-left">
-<li>Entidades</li>
-<li>Componentes</li>
-</ul>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-settings class="text-4xl mb-2" />
-<p class="font-bold mb-2">Tecnología</p>
-<ul class="text-sm text-left">
-<li>Tecnologías</li>
-<li>Estándares</li>
-<li>Interfaces</li>
-</ul>
-</div>
-<div class="flex flex-col items-center text-center">
-<material-symbols-campaign class="text-4xl mb-2" />
-<p class="font-bold mb-2">Comunicación</p>
-<ul class="text-sm text-left">
-<li>Marcas</li>
-<li>Elementos gráficos</li>
-<li>Señalización</li>
-<li>Interfaces visuales</li>
-<li>Plantillas</li>
-</ul>
-</div>
-</div>
-
-<div class="absolute bottom-4 right-8 text-xs">
-Catálogos disponibles en marzo 2026.
-</div>
-
----
-
-## nosotros
-
-::definition
-El Laboratorio de Sistemas Inteligentes de Movilidad (SIMOVI) de la Escuela de Ingeniería Eléctrica (EIE) de la Universidad de Costa Rica (UCR) realiza investigación y desarrollo en sistemas inteligentes de transporte público.
-::
-
-<div class="grid grid-cols-2 gap-3 text-small">
-<div>
-<p><strong>Fabián Abarca Calderón, M.Sc.</strong><br>
-<em>Coordinador y desarrollador principal</em></p>
-</div>
-<div>
-<p><strong>Marvin Coto Jiménez, Ph.D.</strong><br>
-<em>Análisis de datos e inteligencia artificial</em></p>
-</div>
-<div>
-<p><strong>Gustavo Núñez Segura, Ph.D.</strong><br>
-<em>Redes de telecomunicaciones</em></p>
-</div>
-<div>
-<p><strong>Jonathan Agüero Valverde, Ph.D.</strong><br>
-<em>Transporte y estadística espacial</em></p>
-</div>
-<div>
-<p><strong>Silvia Mata Marín, Ph.D.</strong><br>
-<em>Diseño de servicios y diseño gráfico</em></p>
-</div>
-<div>
-<p><strong>Fabiana Gama de Medeiros, Ph.D.</strong><br>
-<em>Estudios de comportamiento y percepción</em></p>
-</div>
-</div>
-
----
-
-## proyectos
-
-::definition
-SIMOVI avanza en su investigación y desarrollo gracias al aporte en el último año de más de 30 estudiantes de distintas carreras en distintos trabajos académicos. 
-::
-
-### Plan piloto
-
-En el 2026, SIMOVI desarrollará el plan piloto de un sistema de información del transporte público para el servicio de bus interno del campus central de la Universidad de Costa Rica, el cual será el **primer sistema inteligente de transporte público del país** y permitirá evaluar la propuesta de arquitectura tecnológica y la estrategia de comunicación en un ambiente de aplicación real.
-
-<div class="flex items-center justify-center">
-<img src="/images/b_white.png" width="125px" alt="Logo bUCR">
-</div>
-
----
-
 ## contacto
 
-<div class="absolute bottom-4 right-8 text-right">
+<div class="absolute bottom-12 right-12 text-right">
 <div class="mb-5">
 <strong>Laboratorio de Sistemas Inteligentes de Movilidad</strong><br>
 Escuela de Ingeniería Eléctrica<br>
@@ -723,3 +803,9 @@ Coordinador<br>
 <a url="mailto:fabian.abarca@ucr.ac.cr" target=_blank>fabian.abarca@ucr.ac.cr</a><br>
 </div>
 </div>
+
+---
+layout: quote
+---
+
+<AnimatedLogo />
