@@ -97,6 +97,39 @@ SIMOVI desarrollará el plan piloto de un sistema de información del transporte
 </div>
 
 ---
+
+## alianzas
+
+::definition
+Con la infraestructura del plan piloto, publicaremos otros suministros de **GTFS** *Realtime* en alianza con una ruta de buses y el servicio de tren.
+::
+
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold mb-3">Transportes San Gabriel</h4>
+<p class="mb-3 text-sm">Primera ruta de buses del país con <strong>GTFS</strong> <i>Schedule</i> en Google Maps, desde 2021.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold"><material-symbols-web/> Página web <a href="https://transportessangabriel.com" target="_blank">transportessangabriel.com</a></dt>
+<dd class="ml-4 text-xs">1000+ visitantes diarios.</dd>
+<dt class="font-semibold"><material-symbols-network-node/> Colaboración externa</dt>
+<dd class="ml-4 text-xs">Financiamiento de pantallas de municipalidades, empresa distribuidora de electricidad y otros.</dd>
+</dl>
+</div>
+<div>
+<h4 class="font-bold mb-3">Incofer</h4>
+<p class="mb-3 text-sm">Acuerdo con la presidencia ejecutiva para el levantamiento de <strong>GTFS</strong> <i>Schedule</i> y publicación en Google Maps.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold"><material-symbols-web/> Sincronización con sitio web</dt>
+<dd class="ml-4 text-xs">Actualización permanente de la información.</dd>
+<dt class="font-semibold"><material-symbols-location-on/> Proveedores externos</dt>
+<dd class="ml-4 text-xs">Rastreo y telemetría de los trenes proviene de una empresa comercial, en conexión con nuestra infraestructura.</dd>
+</dl>
+</div>
+</div>
+
+
+---
 layout: section
 ---
 
@@ -140,7 +173,9 @@ Informe completo disponible en marzo 2026.
 ## visión
 
 ::definition
-Construimos nuestra propuesta con base en las recomendaciones de las organizaciones internacionales líderes en sistemas inteligentes de transporte público y sistemas de software. **InfoTP** es una arquitectura tecnológica y una estrategia de comunicación basadas en un principio esencial: **unicidad de la información**.
+**InfoTP** es una **arquitectura tecnológica** y una **estrategia de comunicación**.
+
+Construimos nuestra propuesta con base en las recomendaciones de las organizaciones internacionales líderes en sistemas inteligentes de transporte público y sistemas de software.
 ::
 
 Este **diseño conjunto** de tecnología y comunicación permite ofrecer información **consistente**, **precisa**, **actualizada** y desde una **fuente única**, a través de la mayor cantidad posible de canales de comunicación.
@@ -198,63 +233,35 @@ Somos los especialistas de **GTFS** en Costa Rica. Todo el diseño de **InfoTP**
 
 ---
 
-## arquitectura
+## arquitectura funcional
 
 ::definition
-La **arquitectura tecnológica** de **InfoTP** es una **solución de extremo a extremo** para los sistemas de información del transporte público. Su arquitectura tiene dos subsistemas principales.
+La **arquitectura tecnológica** de **InfoTP** es una **solución de extremo a extremo** para los sistemas de información del transporte público. 
 ::
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+Su arquitectura tiene dos subsistemas principales.
 
-### Databús
+```mermaid
+flowchart LR
+    V([Vehículos])
+    A([Administración])
+    D((Databús))
+    I((Infobús))
+    IU[Interfaces]
+    U([Personas usuarias])
 
-*Subsistema* :badge{ value="A1" color="#6DC067" }
-
-Recopila la información oficial y los datos de rastreo y telemetría de los vehículos para la publicación en tiempo real con la especificación **GTFS**, disponible para todas las aplicaciones compatibles, incluyendo Google Maps, Moovit, Transit y otros proveedores.
-
-</div>
-<div>
-
-### Infobús
-
-*Subsistema* :badge{ value="A2" color="#F37021" }
-
-Consume datos **GTFS** y distribuye la información por múltiples canales, interfaces y protocolos para todas las partes del sistema, incluyendo las personas usuarias, operadores, planificadores, reguladores, investigadores y otros proveedores tecnológicos.
-
-</div>
-</div>
+    V --> D
+    A --> D
+    D --GTFS--> I
+    I --> IU
+    IU --> U
+```
 
 <div class="absolute bottom-4 right-8 text-xs">
 Databús® e Infobús® son marcas registradas de la Universidad de Costa Rica.
 </div>
 
 ---
-
-## diagrama básico
-
-```mermaid
-flowchart TD
-    TR[Telemetría y rastreo]
-    IO[Información oficial]
-    DB((Databús))
-    IB((Infobús))
-    UI([Interfaces de usuario])
-    OP([Operadores y planificadores])
-    EX([Aplicaciones externas])
-    OA[Otras aplicaciones]
-
-    TR --> DB
-    IO --> DB
-    DB --GTFS--> IB
-    IB --> UI
-    IB --> OP
-    IB --> EX
-    DB --GTFS--> OA
-```
-
----
-
 
 <div class="flex flex-col items-center justify-center h-full gap-8">
     <img src="/images/databus_white.png" width="300px" alt="Logo Databús">
@@ -273,6 +280,13 @@ flowchart TD
         </div>
     </div>
 </div>
+
+
+<!--
+*Subsistema* :badge{ value="A1" color="#6DC067" }
+
+Recopila la información oficial y los datos de rastreo y telemetría de los vehículos para la publicación en tiempo real con la especificación **GTFS**, disponible para todas las aplicaciones compatibles, incluyendo Google Maps, Moovit, Transit y otros proveedores.
+-->
 
 ---
 
@@ -298,40 +312,11 @@ flowchart TD
 </div>
 </div>
 
----
+<!--
+*Subsistema* :badge{ value="A2" color="#F37021" }
 
-## ecosistema tecnológico
-
-::definition
-**InfoTP** está orientado hacia la **interoperabilidad** y la **independencia tecnológica**, fomentando un ecosistema de innovación con una variedad de opciones para todas las partes interesadas.
-::
-
-<div class="grid grid-cols-2 gap-6">
-<div>
-<h4 class="font-bold mb-3">Databús</h4>
-<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos compatibles directamente con GTFS.</p>
-<dl class="text-sm space-y-3">
-<dt class="font-semibold"><material-symbols-open-in-phone-rounded/> Aplicaciones de planificación de viajes multimodales</dt>
-<dd class="ml-4 text-xs">Google Maps, Transit, etc.</dd>
-<dt class="font-semibold"><material-symbols-settings/> Servicios de gestión y optimización operativa</dt>
-<dd class="ml-4 text-xs">Optibus, UbiRider, Moovit MaaS, etc.</dd>
-<dt class="font-semibold"><material-symbols-edit/> Editores de GTFS</dt>
-<dd class="ml-4 text-xs">Ualabee, AddTransit, etc.</dd>
-</dl>
-</div>
-<div>
-<h4 class="font-bold mb-3">Infobús</h4>
-<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos gracias a una multitud de interfaces para aplicaciones independientes.</p>
-<dl class="text-sm space-y-3">
-<dt class="font-semibold"><material-symbols-web/> Páginas web externas</dt>
-<dd class="ml-4 text-xs">Conexión con datos estáticos y en tiempo real</dd>
-<dt class="font-semibold"><material-symbols-signpost/> Publicidad exterior</dt>
-<dd class="ml-4 text-xs">JCDecaux, Colorvisión, Publiex, etc.</dd>
-<dt class="font-semibold"><material-symbols-person-play/> Aficionados a la tecnología</dt>
-<dd class="ml-4 text-xs">Desarrollos independientes y experimentales</dd>
-</dl>
-</div>
-</div>
+Consume datos **GTFS** y distribuye la información por múltiples canales, interfaces y protocolos para todas las partes del sistema, incluyendo las personas usuarias, operadores, planificadores, reguladores, investigadores y otros proveedores tecnológicos.
+-->
 
 ---
 
@@ -341,26 +326,26 @@ flowchart TD
 La **arquitectura tecnológica** de **InfoTP** incluye dos subsistemas complementarios para facilitar y robustecer su operación.
 ::
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+Hay dos componentes para dos tipos de usuarios especializados.
 
-### Infobús Admin
+```mermaid
+flowchart LR
+    A([Administración])
+    IA[Infobús Admin]
+    subgraph F[Arquitectura funcional]
+        D((Databús))
+        I((Infobús))
+    end
+    DA[Databús Admin]
+    T([Personal TI])
+ 
 
-*Subsistema* :badge{ value="A3" color="#FFDD00" }
-
-Ofrece una interfaz con el **sector administrativo** para gestionar todos los datos relacionados con el sistema de información.
-
-</div>
-<div>
-
-### Databús Admin
-
-*Subsistema* :badge{ value="A4" color="#7B3400" }
-
-Ofrece herramientas para el personal de **tecnologías de información** para monitorear la calidad y la seguridad de la infraestructura digital.
-
-</div>
-</div>
+    A --> IA
+    IA --> F
+    F --> DA
+    DA --> F
+    DA --> T
+```
 
 ---
 
@@ -394,7 +379,11 @@ Ofrece herramientas para el personal de **tecnologías de información** para mo
 </div>
 </div>
 
+<!--
+*Subsistema* :badge{ value="A3" color="#FFDD00" }
 
+Ofrece una interfaz con el **sector administrativo** para gestionar todos los datos relacionados con el sistema de información.
+-->
 
 ---
 
@@ -421,6 +410,47 @@ Ofrece herramientas para el personal de **tecnologías de información** para mo
 <simple-icons-rust class="text-4xl" />
 <p class="text-sm">Herramientas para Rust, usado en procesos críticos de alto desempeño para procesamiento en tiempo real.</p>
 </div>
+</div>
+</div>
+
+<!--
+*Subsistema* :badge{ value="A4" color="#7B3400" }
+
+Ofrece herramientas para el personal de **tecnologías de información** para monitorear la calidad y la seguridad de la infraestructura digital.
+-->
+
+---
+
+## ecosistema tecnológico
+
+::definition
+**InfoTP** está orientado hacia la **interoperabilidad** y la **independencia tecnológica**, fomentando un ecosistema de innovación con una variedad de opciones para todas las partes interesadas.
+::
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold mb-3">Databús</h4>
+<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos compatibles directamente con GTFS.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold"><material-symbols-open-in-phone-rounded/> Aplicaciones de planificación de viajes multimodales</dt>
+<dd class="ml-4 text-xs">Google Maps, Transit, etc.</dd>
+<dt class="font-semibold"><material-symbols-settings/> Servicios de gestión y optimización operativa</dt>
+<dd class="ml-4 text-xs">Optibus, UbiRider, Moovit MaaS, etc.</dd>
+<dt class="font-semibold"><material-symbols-edit/> Editores de GTFS</dt>
+<dd class="ml-4 text-xs">Ualabee, AddTransit, etc.</dd>
+</dl>
+</div>
+<div>
+<h4 class="font-bold mb-3">Infobús</h4>
+<p class="mb-3 text-sm">Habilita la participación de proveedores tecnológicos gracias a una multitud de interfaces para aplicaciones independientes.</p>
+<dl class="text-sm space-y-3">
+<dt class="font-semibold"><material-symbols-web/> Páginas web externas</dt>
+<dd class="ml-4 text-xs">Conexión con datos estáticos y en tiempo real</dd>
+<dt class="font-semibold"><material-symbols-signpost/> Publicidad exterior</dt>
+<dd class="ml-4 text-xs">JCDecaux, Colorvisión, Publiex, etc.</dd>
+<dt class="font-semibold"><material-symbols-person-play/> Aficionados a la tecnología</dt>
+<dd class="ml-4 text-xs">Desarrollos independientes y experimentales</dd>
+</dl>
 </div>
 </div>
 
@@ -542,9 +572,11 @@ layout: section
 ## estrategia
 
 ::definition
-La **estrategia de comunicación** de **InfoTP** es una visión integral que promueve el uso del transporte público y ayuda a mejorar la satisfacción de las personas usuarias con el servicio. La comunicación está enfocada en diversos canales.
+La **estrategia de comunicación** de **InfoTP** es una visión integral que promueve el uso del transporte público y ayuda a mejorar la satisfacción de las personas usuarias con el servicio.
 
 ::
+
+La comunicación está enfocada en diversos canales.
 
 <div class="grid grid-cols-3 gap-6 text-center">
 <div class="flex flex-col items-center gap-2">
@@ -809,3 +841,20 @@ layout: quote
 ---
 
 <AnimatedLogo />
+
+---
+layout: section
+---
+
+```mermaid
+sequenceDiagram
+    Aplicación->>Databús: Iniciar viaje (API)
+    loop Cada segundo
+        Validador->>Databús: Posición (MQTT)
+    end
+    alt automático
+        Databús->>Aplicación: Finalizar viaje (Push)
+    else manual
+        Aplicación->>Databús: Finalizar viaje (API)
+    end
+```
