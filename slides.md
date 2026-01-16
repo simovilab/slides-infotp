@@ -31,7 +31,7 @@ layout: section
 ## nosotros
 
 ::definition
-El Laboratorio de Sistemas Inteligentes de Movilidad (SIMOVI) de la Escuela de Ingeniería Eléctrica (EIE) de la Universidad de Costa Rica (UCR) realiza investigación y desarrollo en sistemas inteligentes de transporte público.
+El Laboratorio de Sistemas Inteligentes de Movilidad (SIMOVI) de la Escuela de Ingeniería Eléctrica (EIE) de la Universidad de Costa Rica (UCR) realiza investigación y desarrollo en **sistemas inteligentes de transporte público**.
 ::
 
 <div class="grid grid-cols-2 gap-3 text-small">
